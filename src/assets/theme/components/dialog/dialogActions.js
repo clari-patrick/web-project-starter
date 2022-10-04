@@ -14,12 +14,14 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React helper functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from 'assets/theme/functions/pxToRem';
 
-export default {
+const props = {
   styleOverrides: {
     root: {
       padding: pxToRem(16),
     },
   },
 };
+
+export default props;

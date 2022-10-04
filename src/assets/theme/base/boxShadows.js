@@ -20,14 +20,13 @@ Coded by www.creative-tim.com
  */
 
 // Material Kit 2 React Base Styles
-import colors from "assets/theme/base/colors";
-
+import colors from 'assets/theme/base/colors';
 // Material Kit 2 React Helper Functions
-import boxShadow from "assets/theme/functions/boxShadow";
+import boxShadow from 'assets/theme/functions/boxShadow';
 
 const { black, white, tabs, coloredShadows } = colors;
 
-export default {
+const shadoBoxes = {
   xs: boxShadow(black.main, 0.15, [0, 2], [9, -5]),
   sm: boxShadow(black.main, 0.12, [0, 5], [10, 0]),
   md: `${boxShadow(black.main, 0.1, [0, 4], [6, -1])}, ${boxShadow(
@@ -49,7 +48,7 @@ export default {
     [10, -5]
   )}`,
   xxl: boxShadow(black.main, 0.05, [0, 20], [27, 0]),
-  inset: boxShadow(black.main, 0.075, [0, 1], [2, 0], "inset"),
+  inset: boxShadow(black.main, 0.075, [0, 1], [2, 0], 'inset'),
   colored: {
     primary: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.primary,
@@ -114,3 +113,5 @@ export default {
     indicator: boxShadow(tabs.indicator.boxShadow, 1, [0, 1], [5, 1]),
   },
 };
+
+export default shadoBoxes;

@@ -20,14 +20,13 @@ Coded by www.creative-tim.com
  */
 
 // Material Kit 2 React Base Styles
-import colors from "assets/theme/base/colors";
-
+import colors from 'assets/theme/base/colors';
 // Material Kit 2 React Helper Functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from 'assets/theme/functions/pxToRem';
 
 const { grey } = colors;
 
-export default {
+const borders = {
   borderColor: grey[300],
 
   borderWidth: {
@@ -49,3 +48,5 @@ export default {
     section: pxToRem(160),
   },
 };
+
+export default borders;

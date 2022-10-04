@@ -1,0 +1,86 @@
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+import React from 'react';
+// prop-types is a library for typechecking of props.
+import PropTypes from 'prop-types';
+// @mui material components
+import Icon from '@mui/material/Icon';
+// Material Kit 2 React components
+import MKBox from 'components/MKBox';
+import MKTypography from 'components/MKTypography';
+
+function RotatingCardFront({ color, image, icon, title, description }) {
+  return (
+    <MKBox
+      alignContent="center"
+      borderRadius="lg"
+      coloredShadow={color}
+      display="flex"
+      justifyContent="center"
+      position="relative"
+      sx={{
+        backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
+          `${linearGradient(
+            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
+            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
+          )}, url(${image})`,
+        backgroundSize: 'cover',
+        backfaceVisibility: 'hidden',
+      }}
+      width="100%"
+      zIndex={2}
+    >
+      <MKBox lineHeight={1} px={3} py={12} textAlign="center">
+        {icon && (
+          <MKTypography color="white" my={2} variant="h2">
+            {typeof icon === 'string' ? <Icon>{icon}</Icon> : icon}
+          </MKTypography>
+        )}
+        <MKTypography color="white" variant="h3" gutterBottom>
+          {title}
+        </MKTypography>
+        <MKTypography color="white" opacity={0.8} variant="body2">
+          {description}
+        </MKTypography>
+      </MKBox>
+    </MKBox>
+  );
+}
+
+// Setting default props for the RotatingCardFront
+RotatingCardFront.defaultProps = {
+  color: 'info',
+  icon: '',
+};
+
+// Typechecking props for the RotatingCardFront
+RotatingCardFront.propTypes = {
+  color: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'info',
+    'success',
+    'warning',
+    'error',
+    'dark',
+    'light',
+  ]),
+  image: PropTypes.string.isRequired,
+  icon: PropTypes.node,
+  title: PropTypes.node.isRequired,
+  description: PropTypes.node.isRequired,
+};
+
+export default RotatingCardFront;

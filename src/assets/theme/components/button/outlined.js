@@ -14,28 +14,27 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React Base Styles
-import colors from "assets/theme/base/colors";
-import typography from "assets/theme/base/typography";
-
+import colors from 'assets/theme/base/colors';
+import typography from 'assets/theme/base/typography';
 // Material Kit 2 React Helper Functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from 'assets/theme/functions/pxToRem';
 
 const { transparent, light, info, secondary } = colors;
 const { size } = typography;
 
-export default {
+const props = {
   base: {
     minHeight: pxToRem(40),
     color: light.main,
     borderColor: light.main,
     padding: `${pxToRem(10)} ${pxToRem(24)}`,
 
-    "&:hover": {
+    '&:hover': {
       opacity: 0.75,
       backgroundColor: transparent.main,
     },
 
-    "& .material-icon, .material-icons-round, svg": {
+    '& .material-icon, .material-icons-round, svg': {
       fontSize: `${pxToRem(16)} !important`,
     },
   },
@@ -45,7 +44,7 @@ export default {
     padding: `${pxToRem(6)} ${pxToRem(16)}`,
     fontSize: size.xs,
 
-    "& .material-icon, .material-icons-round, svg": {
+    '& .material-icon, .material-icons-round, svg': {
       fontSize: `${pxToRem(12)} !important`,
     },
   },
@@ -55,7 +54,7 @@ export default {
     padding: `${pxToRem(12)} ${pxToRem(28)}`,
     fontSize: size.sm,
 
-    "& .material-icon, .material-icons-round, svg": {
+    '& .material-icon, .material-icons-round, svg': {
       fontSize: `${pxToRem(22)} !important`,
     },
   },
@@ -64,7 +63,7 @@ export default {
     backgroundColor: transparent.main,
     borderColor: info.main,
 
-    "&:hover": {
+    '&:hover': {
       backgroundColor: transparent.main,
     },
   },
@@ -73,8 +72,10 @@ export default {
     backgroundColor: transparent.main,
     borderColor: secondary.main,
 
-    "&:hover": {
+    '&:hover': {
       backgroundColor: transparent.main,
     },
   },
 };
+
+export default props;

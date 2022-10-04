@@ -5,7 +5,6 @@
   "author": "Patrick Smith",
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React web project started kit with enterprise grade dev tooling including typescript, code generation templates, and testing by Patrick Smith",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
@@ -24,9 +23,14 @@
     "@mui/icons-material": "5.10.6",
     "@mui/material": "5.10.8",
     "@mui/styled-engine": "5.10.8",
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
+    "@types/node": "^18.8.2",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-redux": "^7.1.24",
     "chroma-js": "2.4.2",
     "flatpickr": "4.6.13",
     "prop-types": "15.8.1",
@@ -35,9 +39,13 @@
     "react-countup": "6.3.1",
     "react-dom": "18.2.0",
     "react-flatpickr": "3.10.13",
+    "react-redux": "^8.0.4",
     "react-router-dom": "6.4.1",
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "15.5.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
     "web-vitals": "3.0.2"
   },
   "scripts": {
@@ -53,8 +61,10 @@
   },
   "eslintConfig": {
     "extends": [
+      "eslint:recommended",
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:react/recommended"
     ]
   },
   "browserslist": {
@@ -70,14 +80,21 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^29.1.1",
     "eslint": "8.24.0",
     "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-header": "^3.1.1",
     "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "^27.1.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-webpack-plugin": "^3.2.0",
     "generate-react-cli": "^7.4.0",
     "prettier": "2.7.1",
     "react-test-renderer": "^18.2.0"

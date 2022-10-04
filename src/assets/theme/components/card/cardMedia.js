@@ -14,14 +14,13 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React Base Styles
-import borders from "assets/theme/base/borders";
-
+import borders from 'assets/theme/base/borders';
 // Material Kit 2 React Helper Functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from 'assets/theme/functions/pxToRem';
 
 const { borderRadius } = borders;
 
-export default {
+const props = {
   styleOverrides: {
     root: {
       borderRadius: borderRadius.xl,
@@ -29,7 +28,9 @@ export default {
     },
 
     media: {
-      width: "auto",
+      width: 'auto',
     },
   },
 };
+
+export default props;

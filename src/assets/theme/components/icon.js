@@ -14,17 +14,17 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React helper functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from 'assets/theme/functions/pxToRem';
 
-export default {
+const props = {
   defaultProps: {
-    baseClassName: "material-icons-round",
-    fontSize: "inherit",
+    baseClassName: 'material-icons-round',
+    fontSize: 'inherit',
   },
 
   styleOverrides: {
     fontSizeInherit: {
-      fontSize: "inherit !important",
+      fontSize: 'inherit !important',
     },
 
     fontSizeSmall: {
@@ -36,3 +36,5 @@ export default {
     },
   },
 };
+
+export default props;

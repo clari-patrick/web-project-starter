@@ -14,12 +14,12 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React Button Styles
-import root from "assets/theme/components/button/root";
-import contained from "assets/theme/components/button/contained";
-import outlined from "assets/theme/components/button/outlined";
-import text from "assets/theme/components/button/text";
+import root from 'assets/theme/components/button/root';
+import contained from 'assets/theme/components/button/contained';
+import outlined from 'assets/theme/components/button/outlined';
+import text from 'assets/theme/components/button/text';
 
-export default {
+const props = {
   defaultProps: {
     disableRipple: false,
   },
@@ -42,3 +42,5 @@ export default {
     textSecondary: { ...text.secondary },
   },
 };
+
+export default props;

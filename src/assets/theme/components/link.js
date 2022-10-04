@@ -13,9 +13,11 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-export default {
+const props = {
   defaultProps: {
-    underline: "none",
-    color: "inherit",
+    underline: 'none',
+    color: 'inherit',
   },
 };
+
+export default props;
