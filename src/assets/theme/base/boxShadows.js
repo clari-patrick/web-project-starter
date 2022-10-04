@@ -28,89 +28,89 @@ import boxShadow from "assets/theme/functions/boxShadow";
 const { black, white, tabs, coloredShadows } = colors;
 
 export default {
-  xs: boxShadow([0, 2], [9, -5], black.main, 0.15),
-  sm: boxShadow([0, 5], [10, 0], black.main, 0.12),
-  md: `${boxShadow([0, 4], [6, -1], black.main, 0.1)}, ${boxShadow(
+  xs: boxShadow(black.main, 0.15, [0, 2], [9, -5]),
+  sm: boxShadow(black.main, 0.12, [0, 5], [10, 0]),
+  md: `${boxShadow(black.main, 0.1, [0, 4], [6, -1])}, ${boxShadow(
+    black.main,
+    0.06,
     [0, 2],
-    [4, -1],
-    black.main,
-    0.06
+    [4, -1]
   )}`,
-  lg: `${boxShadow([0, 10], [15, -3], black.main, 0.1)}, ${boxShadow(
+  lg: `${boxShadow(black.main, 0.1, [0, 10], [15, -3])}, ${boxShadow(
+    black.main,
+    0.05,
     [0, 4],
-    [6, -2],
-    black.main,
-    0.05
+    [6, -2]
   )}`,
-  xl: `${boxShadow([0, 20], [25, -5], black.main, 0.1)}, ${boxShadow(
+  xl: `${boxShadow(black.main, 0.1, [0, 20], [25, -5])}, ${boxShadow(
+    black.main,
+    0.04,
     [0, 10],
-    [10, -5],
-    black.main,
-    0.04
+    [10, -5]
   )}`,
-  xxl: boxShadow([0, 20], [27, 0], black.main, 0.05),
-  inset: boxShadow([0, 1], [2, 0], black.main, 0.075, "inset"),
+  xxl: boxShadow(black.main, 0.05, [0, 20], [27, 0]),
+  inset: boxShadow(black.main, 0.075, [0, 1], [2, 0], "inset"),
   colored: {
-    primary: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
-      [0, 7],
-      [10, -5],
+    primary: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.primary,
-      0.4
-    )}`,
-    secondary: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    secondary: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.secondary,
-      0.4
-    )}`,
-    info: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    info: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.info,
-      0.4
-    )}`,
-    success: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    success: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.success,
-      0.4
-    )}`,
-    warning: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    warning: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.warning,
-      0.4
-    )}`,
-    error: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    error: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.error,
-      0.4
-    )}`,
-    light: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    light: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.light,
-      0.4
-    )}`,
-    dark: `${boxShadow([0, 4], [20, 0], black.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    dark: `${boxShadow(black.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       coloredShadows.dark,
-      0.4
-    )}`,
-    white: `${boxShadow([0, 4], [20, 0], white.main, 0.14)}, ${boxShadow(
+      0.4,
       [0, 7],
-      [10, -5],
+      [10, -5]
+    )}`,
+    white: `${boxShadow(white.main, 0.14, [0, 4], [20, 0])}, ${boxShadow(
       white.main,
-      0.4
+      0.4,
+      [0, 7],
+      [10, -5]
     )}`,
   },
 
   sliderBoxShadow: {
-    thumb: boxShadow([0, 1], [13, 0], black.main, 0.2),
+    thumb: boxShadow(black.main, 0.2, [0, 1], [13, 0]),
   },
   tabsBoxShadow: {
-    indicator: boxShadow([0, 1], [5, 1], tabs.indicator.boxShadow, 1),
+    indicator: boxShadow(tabs.indicator.boxShadow, 1, [0, 1], [5, 1]),
   },
 };

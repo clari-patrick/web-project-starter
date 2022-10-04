@@ -43,6 +43,7 @@ MKDatePicker.defaultProps = {
 
 // Typechecking props for the MKDatePicker
 MKDatePicker.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   input: PropTypes.objectOf(PropTypes.any),
 };
 

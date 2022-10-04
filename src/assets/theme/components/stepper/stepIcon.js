@@ -40,7 +40,7 @@ export default {
         fill: white.main,
         stroke: white.main,
         borderColor: white.main,
-        boxShadow: boxShadow([0, 0], [0, 2], white.main, 1),
+        boxShadow: boxShadow(white.main, 1, [0, 0], [0, 2]),
       },
 
       "&.Mui-completed": {
@@ -48,7 +48,7 @@ export default {
         fill: white.main,
         stroke: white.main,
         borderColor: white.main,
-        boxShadow: boxShadow([0, 0], [0, 2], white.main, 1),
+        boxShadow: boxShadow(white.main, 1, [0, 0], [0, 2]),
       },
     },
   },

@@ -37,22 +37,22 @@ export default styled(Button)(({ theme, ownerState }) => {
 
     // boxShadow value
     const boxShadowValue = colored[color]
-      ? `${boxShadow([0, 3], [3, 0], palette[color].main, 0.15)}, ${boxShadow(
-          [0, 3],
-          [1, -2],
+      ? `${boxShadow(palette[color].main, 0.15, [0, 3], [3, 0])}, ${boxShadow(
           palette[color].main,
-          0.2
-        )}, ${boxShadow([0, 1], [5, 0], palette[color].main, 0.15)}`
+          0.2,
+          [0, 3],
+          [1, -2]
+        )}, ${boxShadow(palette[color].main, 0.15, [0, 1], [5, 0])}`
       : "none";
 
     // boxShadow value when button is hovered
     const hoveredBoxShadowValue = colored[color]
-      ? `${boxShadow([0, 14], [26, -12], palette[color].main, 0.4)}, ${boxShadow(
-          [0, 4],
-          [23, 0],
+      ? `${boxShadow(palette[color].main, 0.4, [0, 14], [26, -12])}, ${boxShadow(
           palette[color].main,
-          0.15
-        )}, ${boxShadow([0, 8], [10, -5], palette[color].main, 0.2)}`
+          0.15,
+          [0, 4],
+          [23, 0]
+        )}, ${boxShadow(palette[color].main, 0.2, [0, 8], [10, -5])}`
       : "none";
 
     // color value
@@ -88,8 +88,8 @@ export default styled(Button)(({ theme, ownerState }) => {
       "&:focus:not(:hover)": {
         backgroundColor: focusedBackgroundValue,
         boxShadow: palette[color]
-          ? boxShadow([0, 0], [0, 3.2], palette[color].main, 0.5)
-          : boxShadow([0, 0], [0, 3.2], white.main, 0.5),
+          ? boxShadow(palette[color].main, 0.5, [0, 0], [0, 3.2])
+          : boxShadow(white.main, 0.5, [0, 0], [0, 3.2]),
       },
 
       "&:disabled": {
@@ -109,8 +109,8 @@ export default styled(Button)(({ theme, ownerState }) => {
 
     // boxShadow value
     const boxShadowValue = palette[color]
-      ? boxShadow([0, 0], [0, 3.2], palette[color].main, 0.5)
-      : boxShadow([0, 0], [0, 3.2], white.main, 0.5);
+      ? boxShadow(palette[color].main, 0.5, [0, 0], [0, 3.2])
+      : boxShadow(white.main, 0.5, [0, 0], [0, 3.2]);
 
     // border color value
     let borderColorValue = palette[color] ? palette[color].main : rgba(white.main, 0.75);
@@ -157,22 +157,22 @@ export default styled(Button)(({ theme, ownerState }) => {
 
     // boxShadow value
     const boxShadowValue = colored[color]
-      ? `${boxShadow([0, 3], [3, 0], palette[color].main, 0.15)}, ${boxShadow(
-          [0, 3],
-          [1, -2],
+      ? `${boxShadow(palette[color].main, 0.15, [0, 3], [3, 0])}, ${boxShadow(
           palette[color].main,
-          0.2
-        )}, ${boxShadow([0, 1], [5, 0], palette[color].main, 0.15)}`
+          0.2,
+          [0, 3],
+          [1, -2]
+        )}, ${boxShadow(palette[color].main, 0.15, [0, 1], [5, 0])}`
       : "none";
 
     // boxShadow value when button is hovered
     const hoveredBoxShadowValue = colored[color]
-      ? `${boxShadow([0, 14], [26, -12], palette[color].main, 0.4)}, ${boxShadow(
-          [0, 4],
-          [23, 0],
+      ? `${boxShadow(palette[color].main, 0.4, [0, 14], [26, -12])}, ${boxShadow(
           palette[color].main,
-          0.15
-        )}, ${boxShadow([0, 8], [10, -5], palette[color].main, 0.2)}`
+          0.15,
+          [0, 4],
+          [23, 0]
+        )}, ${boxShadow(palette[color].main, 0.2, [0, 8], [10, -5])}`
       : "none";
 
     // color value

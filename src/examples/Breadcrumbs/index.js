@@ -61,6 +61,7 @@ function Breadcrumbs({ routes, ...rest }) {
 
 // Typechecking props for the Breadcrumbs
 Breadcrumbs.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

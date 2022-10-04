@@ -68,6 +68,7 @@ function BaseLayout({ breadcrumb, title, children }) {
 
 // Typechecking props for the BaseLayout
 BaseLayout.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   breadcrumb: PropTypes.arrayOf(PropTypes.object).isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
